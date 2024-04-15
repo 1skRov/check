@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .header::before {
+      position: absolute;
+      bottom: -17px;
+      right: -15px;
+      background-color: #1e293b;
+      border: none;
+      border-radius: 50%;
+      content: '';
+      width: 30px;
+      height: 30px;
+      z-index: 10;
+    }
+
+    .header::after {
+      position: absolute;
+      bottom: -17px;
+      left: -15px;
+      background-color: #1e293b;
+      border: none;
+      border-radius: 50%;
+      content: '';
+      width: 30px;
+      height: 30px;
+      z-index: 10;
+    }
+
+    .main::before {
+      position: absolute;
+      bottom: -15px;
+      right: -15px;
+      background-color: #1e293b;
+      border: none;
+      border-radius: 50%;
+      content: '';
+      width: 30px;
+      height: 30px;
+    }
+
+    .main::after {
+      position: absolute;
+      bottom: -15px;
+      left: -15px;
+      background-color: #1e293b;
+      border: none;
+      border-radius: 50%;
+      content: '';
+      width: 30px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-slate-800 py-5">
+
+    <div class=" m-auto relative w-80">
+      <div class="relative">
+        <div class=" header w-full bg-white rounded-xl border-0">
+          <div class="flex justify-center py-6">
+            <img class="w-14 rounded-3xl" src="/img/19.png" alt="19">
+          </div>
+          <div class="flex justify-between px-5 pb-6 relative z-10">
+            <p class="font-semibold">Чек 1</p>
+            <p class="font-semibold ">12 Апр 2024</p>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="main w-80 bg-white rounded-xl border-2 border-x-0 border-b-0 border-dashed border-gray-300">
+          <div class="px-5 pt-3">
+            <div class="flex justify-between py-5">
+              <p class="font-semibold">Покупатель:</p>
+              <p class="text-sm text-gray-500">Санжаров М.Д.</p>
+            </div>
+            <div class="flex justify-between pb-5">
+              <p class="font-semibold">Менеджер:</p>
+              <p class="text-sm text-gray-500">Бейсенбаев К.Е.</p>
+            </div>
+          </div>
+          <div class="py-4 px-5">
+            <div class="flex justify-between">
+              <p class="font-semibold">Продукт:</p>
+              <span class="font-semibold text-righ">Цена:</span>
+            </div>
+            <div class="flex justify-between pt-3">
+              <p class="text-sm break-words w-1/2">Смартфон Apple iPhone 15 Pro 5G Blue Titanium, 1 TB</p>
+              <p class="text-sm text-right w-1/2 text-gray-500">12 500</p>
+            </div>
+            <div class="flex justify-between pt-3">
+              <p class="text-sm break-words w-1/2">Смартфон Apple iPhone 15 Pro 5G Blue Titanium, 1 TB</p>
+              <p class="text-sm text-right w-1/2 text-gray-500">12 500000</p>
+            </div>
+            <div class="flex justify-between pt-3">
+              <p class="text-sm break-words w-1/2">Смартфон Samsung Galaxy S24 5G Onyx Black, 128 GB</p>
+              <p class="text-sm text-right break-words w-1/2 text-gray-500">12 5000000</p>
+            </div>
+            <div class="flex justify-between py-5">
+              <p class="font-semibold text-lg">Итог</p>
+              <p class="text-lg text-gray-500">45870000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div 
+        class="w-80 bg-white border-2 border-x-0 border-b-0 border-dashed border-gray-300 flex justify-center rounded-xl">
+        <img class="w-40 py-7" src="/img/qr.png" alt="QR">
+    </div>
+      <div class="flex justify-center py-3 w-full">
+        <button
+          class="bg-yellow-600 py-2 px-2 rounded-xl text-white font-semibold w-full hover:bg-yellow-500 active:bg-yellow-300">Скачать
+          чек</button>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
